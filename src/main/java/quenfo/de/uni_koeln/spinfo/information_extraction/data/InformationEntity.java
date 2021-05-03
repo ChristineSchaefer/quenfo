@@ -14,6 +14,7 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import weka.gui.ResultHistoryPanel;
 
 @Data
 @EqualsAndHashCode(of = { "startLemma", "singleWordEntity", "lemmaArray" })
@@ -66,7 +67,7 @@ public class InformationEntity { // TODO protected/abstract?
 
 	private static StringJoiner sj;
 
-	private Double conf;
+	private double conf;
 
 	/**
 	 * default constructor for object relational mapping
@@ -185,5 +186,5 @@ public class InformationEntity { // TODO protected/abstract?
 		return conf;
 
 	}
-
+	
 }
